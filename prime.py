@@ -13,7 +13,7 @@
 
 import math
 
-def maxPrime(n, max):
+def maxPrime(n, isFactor):
     r = math.ceil(math.sqrt(n))
     num = list(range(2, n+1, 1))
     prime = list(range(2, r+1, 1))
@@ -24,7 +24,7 @@ def maxPrime(n, max):
         prime = list(filter(lambda x: x%i!=0 or (x%i==0 and x==i), prime))
         index += 1
 
-    if max:
+    if not isFactor:
         maxPrime = 2
         num.reverse()
 
@@ -53,8 +53,10 @@ def maxPrime(n, max):
             i += 1
         return x
 
-# assert maxPrime(362077904, True) == 362077871
-assert maxPrime(295788812, False) == 6722473
-assert maxPrime(6722473, True) == 6722473
-assert maxPrime(879228713, False) == 1931
-# print(maxPrime(879228713, False))
+# assert maxPrime(362077904, False) == 362077871
+# assert maxPrime(295788812, True) == 6722473
+# assert maxPrime(6722473, False) == 6722473
+# assert maxPrime(879228713, True) == 1931
+# assert maxPrime(209632533, True) == 22447
+assert maxPrime(2193688, True) == 911
+print(maxPrime(2193688, True))
