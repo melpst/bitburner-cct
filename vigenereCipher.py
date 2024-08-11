@@ -77,9 +77,14 @@ def vigenereCipher(input):
     else:
         return shiftRight(plain[0], keyword[0])+vigenereCipher([plain[1:], keyword[1:]])
     
+
+input = ["MACROINBOXDEBUGLINUXSHELL", "HARDWARE"]
+print(vigenereCipher(input))
+
 assert vigenereCipher(["D","L"]) == "O"
 assert vigenereCipher(["C","I"]) == "K"
 assert vigenereCipher(["MACROPRINTPASTEVIRUSPOPUP", "BLOGGER"]) == "NLQXUTIJYHVGWKFGWXAWGPAIV"
 assert vigenereCipher(["CLOUDDEBUGLOGINPOPUPLOGIC", "COMMAND"]) == "EZAGDQHDISXOTLPDABUCOQUUO"
 assert vigenereCipher(["FRAMEENTERMOUSECACHECLOUD", "OFFLINE"]) == "TWFXMRRHJWXWHWSHFNPRGZTZO"
 assert vigenereCipher(["FLASHENTERPRINTPOPUPVIRUS", "RUNTIME"]) == "WFNLPQRKYEIZURKJBICBZZLHL"
+assert vigenereCipher(["MACROINBOXDEBUGLINUXSHELL", "HARDWARE"]) == "TATUKIEFVXUHXUXPPNLAOHVPS"
