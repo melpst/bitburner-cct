@@ -11,10 +11,9 @@ def mergeOverlap(arr):
                         a[0] = f[0]
                 if f[1]>=a[0] and f[1]>a[1]:
                         a[1] = f[1]
-            # print(a)
             merged = list(filter(lambda x: x not in filtered and x != a, merged))
             merged.append(a)
-            merged.sort()
+        merged = sorted(merged, key = lambda x: (x[0]))
     return merged
 
 input = [[8,13],[22,30],[4,6],[14,20]]
