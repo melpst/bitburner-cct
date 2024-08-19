@@ -10,8 +10,10 @@ def cipher(input):
             result += chr(ascii[asc])
         else:
             result += s
-    # print(result)
     return result
+
+input = ["LOGIN LOGIC SHIFT PRINT ENTER", 12]
+print(cipher(input))
 
 assert cipher(['BCD',1]) == 'ABC'
 assert cipher(["VIRUS LOGIC ENTER CACHE LOGIN", 2]) == 'TGPSQ JMEGA CLRCP AYAFC JMEGL'
@@ -20,4 +22,10 @@ assert cipher(["EMAIL MEDIA TRASH MACRO TABLE", 1]) == 'DLZHK LDCHZ SQZRG LZBQN 
 assert cipher(["ENTER CLOUD MOUSE PRINT CACHE", 18]) == 'MVBMZ KTWCL UWCAM XZQVB KIKPM'
 assert cipher(["VIRUS ENTER EMAIL CACHE MEDIA", 8]) == 'NAJMK WFLWJ WESAD USUZW EWVAS'
 assert cipher(["POPUP ARRAY CACHE PRINT FLASH", 24]) == 'RQRWR CTTCA ECEJG RTKPV HNCUJ'
-print(cipher(["POPUP ARRAY CACHE PRINT FLASH", 24]))
+assert cipher(["INBOX LINUX FLASH CLOUD PRINT", 2]) == 'GLZMV JGLSV DJYQF AJMSB NPGLR'
+assert cipher(["CLOUD ENTER TABLE LOGIN MOUSE", 23]) == 'FORXG HQWHU WDEOH ORJLQ PRXVH'
+assert cipher(["ENTER CACHE FRAME QUEUE ARRAY", 17]) == 'NWCNA LJLQN OAJVN ZDNDN JAAJH'
+assert cipher(["MEDIA TABLE ENTER VIRUS DEBUG", 17]) == 'VNMRJ CJKUN NWCNA ERADB MNKDP'
+assert cipher(["SHELL LINUX LOGIC VIRUS ARRAY", 1]) == 'RGDKK KHMTW KNFHB UHQTR ZQQZX'
+assert cipher(["SHIFT ARRAY LOGIN MOUSE CACHE", 13]) == 'FUVSG NEENL YBTVA ZBHFR PNPUR'
+assert cipher(["DEBUG CLOUD VIRUS MACRO LOGIC", 15]) == 'OPMFR NWZFO GTCFD XLNCZ WZRTN'

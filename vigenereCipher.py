@@ -60,7 +60,6 @@ def shiftRight(p, i):
     shiftIndex = alphabetIndex(i)
     plainIndex = alphabetIndex(p)
     cipherIndex = (plainIndex+shiftIndex)%26
-    # print(cipherIndex)
     return chr(65+cipherIndex)
 
 assert shiftRight("A","A") == "A"
@@ -78,7 +77,7 @@ def vigenereCipher(input):
         return shiftRight(plain[0], keyword[0])+vigenereCipher([plain[1:], keyword[1:]])
     
 
-input = ["MACROINBOXDEBUGLINUXSHELL", "HARDWARE"]
+input = ["FRAMEARRAYTABLEEMAILTRASH", "COMPUTER"]
 print(vigenereCipher(input))
 
 assert vigenereCipher(["D","L"]) == "O"
@@ -88,3 +87,10 @@ assert vigenereCipher(["CLOUDDEBUGLOGINPOPUPLOGIC", "COMMAND"]) == "EZAGDQHDISXO
 assert vigenereCipher(["FRAMEENTERMOUSECACHECLOUD", "OFFLINE"]) == "TWFXMRRHJWXWHWSHFNPRGZTZO"
 assert vigenereCipher(["FLASHENTERPRINTPOPUPVIRUS", "RUNTIME"]) == "WFNLPQRKYEIZURKJBICBZZLHL"
 assert vigenereCipher(["MACROINBOXDEBUGLINUXSHELL", "HARDWARE"]) == "TATUKIEFVXUHXUXPPNLAOHVPS"
+assert vigenereCipher(["MODEMMOUSEFRAMECLOUDTABLE", "PLATFORM"]) == "BZDXRAFGHPFKFAVOAZUWYOSXT"
+assert vigenereCipher(["LOGICMOUSEFRAMEPRINTMODEM", "MONITOR"]) == "XCTQVAFGGRNKODQDEQGHDARRU"
+assert vigenereCipher(["MACROARRAYPOPUPLINUXMEDIA", "TOOLBAR"]) == "FOQCPAIKOMAPPLIZWYVXDXRWL"
+assert vigenereCipher(["LOGINARRAYPASTEPOPUPLINUX", "NETWORK"]) == "YSZEBRBEERLOJDRTHLIGVVRNT"
+assert vigenereCipher(["MOUSEEMAILMODEMQUEUECLOUD", "COMPILE"]) == "OCGHMPQCWXBWOIOEGTCPGNCGS"
+assert vigenereCipher(["DEBUGMACROCLOUDFLASHENTER", "ALGORITHM"]) == "DPHIXUTJDONRCLLYSMSSKBKMK"
+assert vigenereCipher(["FRAMEARRAYTABLEEMAILTRASH", "COMPUTER"]) == "HFMBYTVICMFPVEIVOOUANKEJJ"
