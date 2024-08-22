@@ -12,7 +12,7 @@ def cipher(input):
             result += s
     return result
 
-input = ["LOGIN LOGIC SHIFT PRINT ENTER", 12]
+input = ["ENTER ARRAY LOGIN PRINT MOUSE", 9]
 print(cipher(input))
 
 assert cipher(['BCD',1]) == 'ABC'
@@ -29,3 +29,5 @@ assert cipher(["MEDIA TABLE ENTER VIRUS DEBUG", 17]) == 'VNMRJ CJKUN NWCNA ERADB
 assert cipher(["SHELL LINUX LOGIC VIRUS ARRAY", 1]) == 'RGDKK KHMTW KNFHB UHQTR ZQQZX'
 assert cipher(["SHIFT ARRAY LOGIN MOUSE CACHE", 13]) == 'FUVSG NEENL YBTVA ZBHFR PNPUR'
 assert cipher(["DEBUG CLOUD VIRUS MACRO LOGIC", 15]) == 'OPMFR NWZFO GTCFD XLNCZ WZRTN'
+assert cipher(["LINUX CACHE QUEUE CLOUD SHIFT", 20]) == 'ROTAD IGINK WAKAK IRUAJ YNOLZ'
+assert cipher(["ENTER ARRAY LOGIN PRINT MOUSE", 9]) == 'VEKVI RIIRP CFXZE GIZEK DFLJV'

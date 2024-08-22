@@ -77,7 +77,7 @@ def vigenereCipher(input):
         return shiftRight(plain[0], keyword[0])+vigenereCipher([plain[1:], keyword[1:]])
     
 
-input = ["FRAMEARRAYTABLEEMAILTRASH", "COMPUTER"]
+input = ["ARRAYINBOXCACHEPASTECLOUD", "ENCRYPT"]
 print(vigenereCipher(input))
 
 assert vigenereCipher(["D","L"]) == "O"
@@ -94,3 +94,5 @@ assert vigenereCipher(["LOGINARRAYPASTEPOPUPLINUX", "NETWORK"]) == "YSZEBRBEERLO
 assert vigenereCipher(["MOUSEEMAILMODEMQUEUECLOUD", "COMPILE"]) == "OCGHMPQCWXBWOIOEGTCPGNCGS"
 assert vigenereCipher(["DEBUGMACROCLOUDFLASHENTER", "ALGORITHM"]) == "DPHIXUTJDONRCLLYSMSSKBKMK"
 assert vigenereCipher(["FRAMEARRAYTABLEEMAILTRASH", "COMPUTER"]) == "HFMBYTVICMFPVEIVOOUANKEJJ"
+assert vigenereCipher(["INBOXARRAYMOUSELOGICSHIFT", "PLATFORM"]) == "XYBHCOIDPJMHZGVXDRIVXVZRI"
+assert vigenereCipher(["ARRAYINBOXCACHEPASTECLOUD", "ENCRYPT"]) == "EETRWXGFBZTYRAICCJRTVPBWU"
