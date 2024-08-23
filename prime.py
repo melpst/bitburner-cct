@@ -127,6 +127,7 @@ def largestPrimeFactor(num):
 # assert largestPrimeFactor(851294011) == 399481
 # assert largestPrimeFactor(834713741) == 7801063
 # assert largestPrimeFactor(352806313) == 17939
+# assert largestPrimeFactor(378904917) == 126301639
 
 
 def largestPrime(num):
