@@ -106,28 +106,28 @@ def largestPrimeFactor(num):
 
 # print(largestPrimeFactor(352806313))
 
-# assert largestPrimeFactor(2) == 2
-# assert largestPrimeFactor(3) == 3
-# assert largestPrimeFactor(4) == 2
-# assert largestPrimeFactor(5) == 5
-# assert largestPrimeFactor(7) == 7
-# assert largestPrimeFactor(9) == 3
-# assert largestPrimeFactor(11) == 11
-# assert largestPrimeFactor(13) == 13
-# assert largestPrimeFactor(16) == 2
-# assert largestPrimeFactor(2193688) == 911
-# assert largestPrimeFactor(62509998) == 2347
-# assert largestPrimeFactor(424826643) == 7229
-# assert largestPrimeFactor(302481900) == 19
-# assert largestPrimeFactor(777259326) == 12647
-
-# assert largestPrimeFactor(295788812) == 6722473
-# assert largestPrimeFactor(879228713) == 1931
-# assert largestPrimeFactor(209632533) == 22447
-# assert largestPrimeFactor(851294011) == 399481
-# assert largestPrimeFactor(834713741) == 7801063
-# assert largestPrimeFactor(352806313) == 17939
-# assert largestPrimeFactor(378904917) == 126301639
+assert largestPrimeFactor(2) == 2
+assert largestPrimeFactor(3) == 3
+assert largestPrimeFactor(4) == 2
+assert largestPrimeFactor(5) == 5
+assert largestPrimeFactor(7) == 7
+assert largestPrimeFactor(9) == 3
+assert largestPrimeFactor(11) == 11
+assert largestPrimeFactor(13) == 13
+assert largestPrimeFactor(16) == 2
+assert largestPrimeFactor(2193688) == 911
+assert largestPrimeFactor(62509998) == 2347
+assert largestPrimeFactor(424826643) == 7229
+assert largestPrimeFactor(302481900) == 19
+assert largestPrimeFactor(777259326) == 12647
+assert largestPrimeFactor(295788812) == 6722473
+assert largestPrimeFactor(879228713) == 1931
+assert largestPrimeFactor(209632533) == 22447
+assert largestPrimeFactor(851294011) == 399481
+assert largestPrimeFactor(834713741) == 7801063
+assert largestPrimeFactor(352806313) == 17939
+assert largestPrimeFactor(378904917) == 126301639
+assert largestPrimeFactor(774816742) == 1287071
 
 
 def largestPrime(num):
